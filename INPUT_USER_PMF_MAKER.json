@@ -1,0 +1,43 @@
+{
+  "REQUIRED_FILES_NAMES": {
+    "INI_BOX_NAME": "cnc010Initial.gro",
+    "BOX_TO_CONCAT": "mmt.gro",
+    "EM_INI_MPD": "em_ini.mdp",
+    "EM_MDP": "em.mdp",
+    "PMF_MDP": "pmf.mdp",
+    "NVT_MDP": "short_nvt.mdp",
+    "IONS_MDP": "ions.mdp",
+    "TOPO_INI": "topol.top",
+    "SLURM_SUBMISSION_FILE_1": "gmx18_cpu.slurm",
+    "SLURM_SUBMISSION_FILE_2": "gmx18_gpu.slurm",
+    "SLURM_SUBMISSION_FILE_3": "gmx18_short.slurm",
+    "ALL_INITIAL_FILES_FOLDER": "topol_mpd_slurm",
+    "INI_SLURM_JOB_NAME": "cnc010_0_pmf"
+  },
+  "GMX_OUTPUT_FILES_NAMES": {
+    "GMX_SOLVATE_OUTPUT": "outSolvate.txt",
+    "GMX_GENION_OUTPUT": "outGenion.txt",
+    "GMX_GROMPP_EM_INITIAL_OUTPUT": "outGromppEmInitial.txt",
+    "GMX_MDRUN_EM_INITIAL_OUTPUT": "outMdrunEmInitial.txt",
+    "GMX_GROMPP_EM_OUTPUT": "outGromppEm.txt",
+    "GMX_MDRUN_EM_OUTPUT": "outMdrunEm.txt",
+    "GMX_GROMPP_NVT_OUTPUT": "outGromppNvt.txt",
+    "GMX_MDRUN_NVT_OUTPUT": "outMdrunNvt.txt",
+    "GMX_GROMPP_PMF_OUTPUT": "outGromppPmf.txt"
+  },
+  "SCRIPT_PARAMETERS_FOR_GMX_AND_PMF_MAKER": {
+    "PMF_TOTAL_STEPS": 40,
+    "GMX_CALL": "/usr/local/bin/gmx",
+    "PMF_SIMULATION_NAME": "cnc010",
+    "RESIDUE_TO_MOVE_IN_INI_BOX_NAME": "cnc",
+    "CATION_FOR_GENION": "NA",
+    "ANION_FOR_GENION": "CL",
+    "PMF_SIMULATION_NUMBER": 0,
+    "OPEN_MP_THREAD": "1",
+    "Z_DISTANCE_TO_MOVE_FOR_PMF_INI": "0.01",
+    "Z_DISTANCE_TO_MOVE_FOR_PMF": "0.1",
+    "Z_BOX_ADDTIONAL_LENGTH": 5,
+    "OPERATION_FOR_MOLECULE_TO_MOVE": "-",
+    "RESIDUE_TO_MOVE_INITIAL": "all"
+  }
+}
